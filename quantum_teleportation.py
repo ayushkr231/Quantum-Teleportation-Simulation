@@ -70,9 +70,3 @@ circuit, counts = quantum_teleportation(noisy=True)  # Set noisy=True to simulat
 print(circuit)
 plot_histogram(counts).show()
 
-# Optional: Visualize the circuit and Bloch sphere (uncomment to use)
-# circuit.draw(output='mpl').show()
-# state_sim = Aer.get_backend('statevector_simulator')
-# result_state = execute(circuit, state_sim).result()
-# state = result_state.get_statevector()
-# plot_bloch_multivector(state).show()
